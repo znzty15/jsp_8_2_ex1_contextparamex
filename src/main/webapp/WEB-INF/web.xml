@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
-  <display-name>jsp_8_2_ex1_contextparamex</display-name>
+  <display-name>jsp_8_2_Ex1_contextparamex</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -9,4 +9,22 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <!--누구나 가져갈수 있는 메소드를 생성하여 데이터 불러가게 만들기-->
+  
+  <context-param>
+     <param-name>id2</param-name>
+     <param-value>abc</param-value>
+  </context-param>
+  
+  <context-param>  
+      <param-name>pw2</param-name>
+     <param-value>123</param-value>
+  </context-param>
+     
+  <context-param>
+      <param-name>path</param-name>
+     <param-value>C:\\JSP\\work</param-value>
+  </context-param>
+  
 </web-app>
